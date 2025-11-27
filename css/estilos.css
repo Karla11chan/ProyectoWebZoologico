@@ -1,3 +1,4 @@
+/*CSS del Index*/
 html{
     font-size: 62.5%;
 }
@@ -6,11 +7,10 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(183, 183, 184) ;
-    background-repeat: no-repeat;
+
 }
+
 .columna-central {
-            background-color: rgb(144, 144, 151);
-            border: 0.2em solid rgb(68, 67, 68);
             border-top: none;
             display: flex;
             flex-direction: row;
@@ -24,22 +24,22 @@ body{
     background-color: rgb(144, 144, 151);
     border: 0.2em solid rgb(68, 67, 68);
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 4fr 4fr 2fr;
     justify-items: center;
     align-items: center;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
 }
 
-
 #encabezado img{
-    width: 30%;
-    height: 65%;
+    width: 20%;
+    height: 70%;
     aspect-ratio: 1/1;
     /* define la relación de aspecto entre el ancho y la altura de un elemento, asegurando que sus dimensiones 
     mantengan esa proporción específica al cambiar el tamaño de la pantalla o el contenedor*/
     border-radius: 100%;
     object-fit: fill;
+    position: right;
 }
 
 h1{
@@ -47,7 +47,7 @@ h1{
     text-align: center;
 }
 
-#navegacion{
+#navegacion{ 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -58,7 +58,7 @@ h1{
     /*Permite aplicar translaciones, rotaciones y escalas a un elemento HTML
     /*Se aplica una transicion: propiedad tiempo funcion*/
     transition: transform 0.1s ease-in-out;
-    transform: translateX(100%);
+    transform: translateX(-900%);
     height: 100vh;
     border: 0.2em solid rgb(68, 67, 68);
     background-color: rgb(183, 183, 184);
@@ -72,7 +72,8 @@ h1{
 }
 
 .abrir {
-    width: 8%;
+    
+    width: 15em;
     height: auto;
     padding: 0.5em;
     margin: 0.5em;
@@ -82,11 +83,11 @@ h1{
     cursor: pointer;
     border-radius: 50%;
     opacity: 100%;
-    transform: translateX(-60em);
+    transform: translateX(-20%);
 }
 .cerrar {
     display: none;
-    width: 8%;
+    width: 15em;
     height: auto;
     padding: 0.5em;
     margin: 0.5em;
@@ -96,7 +97,7 @@ h1{
     cursor: pointer;
     border-radius: 50%;
     opacity: 100%;
-    transform: translateX(-60em);
+    transform: translateX(-20%);
 }
 #check{
     display: none;
@@ -109,7 +110,7 @@ h1{
 /*El selector ~ afecta a un elemento que está a la altura de otro, así cuando la pseudoclase checked esta marcada aploca ciertos estilos*/
 
 #check:checked ~#navegacion {
-    transform: translateX(0);
+    transform: translateX(-555%);
 }
 
 /*Ocultando el boton abrir*/
@@ -120,4 +121,73 @@ h1{
 /*Mostrando el boton salir*/
 #check:checked ~ .cerrar{
     display:block;
+}
+
+@media screen and (max-width: 850px) {
+ #navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15%;
+    /*Permite aplicar translaciones, rotaciones y escalas a un elemento HTML
+    /*Se aplica una transicion: propiedad tiempo funcion*/
+    transition: transform 0.1s ease-in-out;
+    transform: translateX(-900%);
+    height: 100vh;
+    border: 0.2em solid rgb(68, 67, 68);
+    background-color: rgb(183, 183, 184);
+    font-size: 1em;
+
+    /*opacity: 50%;*/
+}
+#encabezado{
+    font-size: 1em;
+    background-color: rgb(144, 144, 151);
+    border: 0.2em solid rgb(68, 67, 68);
+    display: grid;
+    grid-template-columns: 4fr 4fr 2fr;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: right;
+}
+#encabezado img{
+    width: 20%;
+    height: 80%;
+    aspect-ratio: 1/1;
+    /* define la relación de aspecto entre el ancho y la altura de un elemento, asegurando que sus dimensiones 
+    mantengan esa proporción específica al cambiar el tamaño de la pantalla o el contenedor*/
+    border-radius: 100%;
+    object-fit: fill;
+}
+.abrir {
+    width: 10em;
+    height: auto;
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: rgb(69, 101, 73);
+    color: rgb(35, 37, 40);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 100%;
+    transform: translateX(-20%);
+}
+.cerrar {
+    display: none;
+    width: 10em;
+    height: auto;
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color:rgb(69, 101, 73);
+    color: rgb(35, 37, 40);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 100%;
+    transform: translateX(-20%);
+}
 }
