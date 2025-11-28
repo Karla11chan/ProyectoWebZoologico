@@ -418,7 +418,17 @@ h1{
     font-size: 1em;
     padding: 0.4em;
 }
-
+.servicio{
+    display: flex;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-direction: column;
+    border: 0.2em solid black;
+    align-items: center;
+    padding:0.1em;
+}
 }
 /*Modifica la sección de promociones y eso*/
 @media screen and (max-width: 1500px) and (min-width: 850px){
