@@ -190,7 +190,7 @@ h1{
 
 }
 .temporada{
-    flex: 1 0 152em;
+    flex: 1 0 100%;
     border: 0.2em dotted darkslateblue;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -221,6 +221,107 @@ h1{
     text-align: center;
     font-size: 3em
 }
+
+/*Sección de cupones*/
+.cupones_imagenes{
+    display: flex;
+    flex-direction: row;
+    overflow-x:scroll;
+}
+.cupones h2{
+    font-size: 3em;
+    text-align: center;
+}
+.cupones img{
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+/*Sección de servicios */
+.general_servicios h2{
+    font-size: 3em;
+    text-align: center;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+}
+.servicio img{
+    width: 40%;
+
+}
+
+.servicio{
+    display: flex;
+    margin-left: 9em;
+    margin-right: 9em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-direction: column;
+    border: 0.2em solid black;
+    align-items: center;
+    padding:0.1em;
+}
+.servicio p{
+    font-size: 1.5em;
+    padding: 0.4em;
+}
+
+/* Pie de página*/
+#pie_pagina{
+        margin:0.1em;
+        border:0.2em solid black;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        align-items: center;
+    }
+.redes{
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        margin: 0.1em
+    }
+.redes p{
+    grid-column: 1/4;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.redes a{
+    text-decoration: none;
+    color: black;
+}
+.redes a:hover{
+    background-color: pink;
+    font-weight: bolder;
+}
+.contacto{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-column: 2/3;
+        align-items: center;
+        margin: 0.1em
+    }
+.contacto p{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-size: 1.3em;
+    font-weight: bold;
+}
+.contacto a{
+    text-decoration: none;
+    color: black;
+}
+.contacto a:hover{
+    background-color: pink;
+}
+.derechos-autor{
+        grid-column: 3/4;
+    }
 /*Modificación para cuando la pantalla se hace pequeña*/
 @media screen and (max-width: 850px) {
  #navegacion{
@@ -313,8 +414,13 @@ h1{
     object-fit: fill;
     width: 100%;
 }
+.servicio p{
+    font-size: 1em;
+    padding: 0.4em;
 }
 
+}
+/*Modifica la sección de promociones y eso*/
 @media screen and (max-width: 1500px) and (min-width: 850px){
 .temporada{
     flex: 1 0 120em;
