@@ -77,32 +77,24 @@ h1{
 
 .abrir {
     grid-column: 6/7;
-    width: 15em;
-    height: auto;
-    padding: 0.5em;
-    margin: 0.5em;
-    background-color: rgb(69, 101, 73);
-    color: rgb(35, 37, 40);
-    text-align: center;
+    width: 5em;
     cursor: pointer;
-    border-radius: 50%;
-    opacity: 100%;
     transform: translateX(120%);
+    font-size: 30px;
+    cursor: pointer;
+    position: relative; 
+    top: -10px;
 }
 .cerrar {
     grid-column: 6/7;
     display: none;
-    width: 15em;
-    height: auto;
-    padding: 0.5em;
-    margin: 0.5em;
-    background-color:rgb(69, 101, 73);
-    color: rgb(35, 37, 40);
-    text-align: center;
+    width: 5em;
     cursor: pointer;
-    border-radius: 50%;
-    opacity: 100%;
     transform: translateX(120%);
+    font-size: 30px;
+    cursor: pointer;
+    position: relative; 
+    top: -10px;
 }
 #check{
     display: none;
@@ -175,32 +167,24 @@ h1{
 }
 
 .abrir {
-    grid-column: 6/7;
-    width: 10em;
-    height: auto;
-    padding: 0.5em;
-    margin: 0.5em;
-    background-color: rgb(69, 101, 73);
-    color: rgb(35, 37, 40);
-    text-align: center;
+       grid-column: 6/7;
+    width: 5em;
     cursor: pointer;
-    border-radius: 50%;
-    opacity: 100%;
-    transform: translateX(70%);
+    transform: translateX(120%);
+    font-size: 30px;
+    cursor: pointer;
+    position: relative; 
+    top: -10px;
 }
 .cerrar {
     grid-column: 6/7;
     display: none;
-    width: 10em;
-    height: auto;
-    padding: 0.5em;
-    margin: 0.5em;
-    background-color:rgb(69, 101, 73);
-    color: rgb(35, 37, 40);
-    text-align: center;
+    width: 5em;
     cursor: pointer;
-    border-radius: 50%;
-    opacity: 100%;
-    transform: translateX(70%);
+    transform: translateX(120%);
+    font-size: 30px;
+    cursor: pointer;
+    position: relative; 
+    top: -10px;
 }
 }
