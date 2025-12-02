@@ -69,7 +69,7 @@ h2,h3{
     font-size: 1.5em;
     /*opacity: 50%;*/
 }
-a.boton-navegacion {
+a.boton-navegacion{
     text-decoration: none;
     padding: 10px 25px;      
     border: 2px solid rgb(11, 60, 40); 
@@ -160,7 +160,7 @@ a.boton-navegacion:hover {
     margin-top: 2em;
     margin-bottom: 2em;
     flex-direction: column;
-    box-shadow: 0.2em 0.2em 0.2em rgb(68, 81, 68);
+    box-shadow: 0.2em 0.2em 0.2em rgb(11, 60, 40);
     align-items: center;
     padding:0.1em;
 }
@@ -170,7 +170,7 @@ a.boton-navegacion:hover {
     margin-right: 8em;
     margin-top: 1em;
     margin-bottom: 1em;
-    box-shadow: 0.2em 0.2em 0.5em rgb(28, 64, 28);
+    box-shadow: 0.2em 0.2em 0.5em rgb(11, 60, 40);
     background-color: rgb(201, 220, 201) ;
 }
 .animal p{

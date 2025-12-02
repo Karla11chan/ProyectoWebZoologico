@@ -29,8 +29,6 @@ body{
     width: 80%;
     height: 70%;
     aspect-ratio: 1/1;
-    /* define la relación de aspecto entre el ancho y la altura de un elemento, asegurando que sus dimensiones 
-    mantengan esa proporción específica al cambiar el tamaño de la pantalla o el contenedor*/
     border-radius: 100%;
     object-fit: fill;
     position: right;
@@ -42,17 +40,26 @@ body{
     text-align: center;
 }
 
-#encabezado a{
-    grid-column: 5/7;
+.boton-navegacion {
     text-decoration: none;
-    color:rgb(167, 205, 237);
-    font-size: 2em;
-    background-color: rgb(58, 54, 126);
-    box-shadow: 0.2em 0.2em 0.2em rgb(23, 23, 47);
+    color:rgb(219, 225, 232);
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 50px; 
+    border: none;
+    display: inline-block;
+    background: linear-gradient(45deg, rgb(39, 35, 124),rgb(150, 60, 200));
+    background-size: 200% 200%;
+    box-shadow: 0 4px 15px rgba(39, 35, 124, 0.4);  
+    transition: all 0.4s ease;
 }
-#encabezado a:hover{
-     font-size: 2.5em;
+
+.boton-navegacion:hover {
+    transform: translateY(-3px); 
+    background-position: 100% 0; 
+    box-shadow: 0 8px 25px rgba(150, 60, 200, 0.5); 
 }
+
 /*Información de los animales*/
 #principal h2{
     font-size: 4em;
