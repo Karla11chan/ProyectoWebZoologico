@@ -259,6 +259,7 @@ a.boton-navegacion:hover {
 }
 .cupones img{
     width: 100%;
+    max-height: 70em;
     flex: 1 0 100%;
 }
 
