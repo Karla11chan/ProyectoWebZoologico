@@ -309,7 +309,7 @@ a.boton-navegacion:hover {
 
 /* Pie de página*/
 #pie_pagina{
-         margin:0.1em;
+        margin:0.1em;
         border:0.2em solid black;
         display:grid;
         grid-template-columns: repeat(3,1fr);
@@ -331,13 +331,25 @@ a.boton-navegacion:hover {
     font-weight: bold;
     color: rgb(129, 167, 140)
 }
-.redes a{
-    text-decoration: none;
-    color: rgb(129, 167, 140)
+.redes a{   
+   text-decoration: none;
+    margin-left: 2em;
+    margin-right: 2em;
+    color:rgb(219, 225, 232);
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 50px; 
+    border: none;
+    display: inline-block;
+    background: linear-gradient(45deg, rgb(34, 69, 46),rgb(57, 149, 126));
+    box-shadow: 0 4px 15px rgba(39, 35, 124, 0.4);  
+    transition: all 0.4s ease;
 }
 .redes a:hover{
-  background-color:rgb(94, 115, 94);
-    font-weight: bolder;
+  transform: translateY(-3px); 
+    background-position: 100% 0; 
+     background: linear-gradient(45deg, rgb(44, 82, 57),rgb(75, 198, 167));
+    box-shadow: 0 8px 25px rgba(150, 60, 200, 0.5); 
 }
 .contacto{
         display: grid;
@@ -355,13 +367,27 @@ a.boton-navegacion:hover {
     color: rgb(129, 167, 140)
 }
 .contacto a{
-    text-decoration: none;
-    color: rgb(129, 167, 140)
+   text-decoration: none;
+    margin-left: 5.5em;
+    margin-right: 5.5em;
+    color:rgb(219, 225, 232);
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 50px; 
+    border: none;
+    display: inline-block;
+    background: linear-gradient(45deg,rgb(34, 69, 46),rgb(57, 149, 126));
+    box-shadow: 0 4px 15px rgba(39, 35, 124, 0.4);  
+    transition: all 0.4s ease;
 }
 .contacto a:hover{
-    background-color:rgb(94, 115, 94);
+    transform: translateY(-3px); 
+    background-position: 100% 0; 
+    background: linear-gradient(45deg, rgb(44, 82, 57),rgb(75, 198, 167));
+    box-shadow: 0 8px 25px rgba(150, 60, 200, 0.5); 
 }
 .derechos-autor{
+        font-size: 1.3em;
         grid-column: 3/4;
         color: rgb(129, 167, 140)
     }
@@ -513,7 +539,31 @@ width: 70%;
     align-items: center;
     padding:0.1em;
 }
+/*Modificación al pie de*/
 
+.redes p{
+    font-size: 1em;
+
+}
+.redes a{   
+    margin-left: 0.5em;
+    margin-right:0.5em;
+    padding: 2px 10px;
+}
+
+.contacto p{   
+        font-size: 1em;
+
+}
+.contacto a{
+    margin-left: 0.5em;
+    margin-right:0.5em;
+    padding: 2px 10px;
+}
+
+.derechos-autor{
+        font-size: 1em;
+    }
 }
 /*Modifica la sección de promociones y eso*/
 @media screen and (max-width: 1500px) and (min-width: 850px){
@@ -585,4 +635,27 @@ width: 70%;
     font-size: 1.3em;
     padding: 0.4em;
 }
+/*Modificación al pie de página*/
+.redes p{
+    font-size: 1.3em;
+
+}
+.redes a{   
+    margin-left: 1em;
+    margin-right:1em;
+    padding: 10px 20px;
+}
+
+.contacto p{
+        font-size: 1.3em;
+}
+.contacto a{
+   margin-left: 1em;
+    margin-right:1em;
+    padding: 10px 20px;
+}
+
+.derechos-autor{
+        font-size: 1.3em;
+    }
 }
