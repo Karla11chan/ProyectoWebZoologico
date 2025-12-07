@@ -73,6 +73,7 @@ a.boton-navegacion{
     text-decoration: none;
     padding: 10px 25px;      
     border: 2px solid rgb(11, 60, 40); 
+    background-color: rgb(58, 122, 86);
     color: rgb(11, 60, 40);
     border-radius: 50px;        
     font-weight: bold;
