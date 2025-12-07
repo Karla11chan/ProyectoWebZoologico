@@ -63,15 +63,18 @@ h2,h3{
     transition: transform 0.1s ease-in-out;
     transform: translateX(-900%);
     height: 100vh;
-    border: 0.2em solid rgb(68, 67, 68);
+    border: 0.2em solid rgb(24, 72, 16);
     background-color:rgb(30, 100, 60);
     font-size: 1.5em;
+    z-index: 9999; 
+
     /*opacity: 50%;*/
 }
 a.boton-navegacion{
     text-decoration: none;
     padding: 10px 25px;      
     border: 2px solid rgb(11, 60, 40); 
+    background-color: rgb(58, 122, 86);
     color: rgb(11, 60, 40);
     border-radius: 50px;        
     font-weight: bold;
@@ -130,12 +133,196 @@ a.boton-navegacion:hover {
 #check:checked ~ .cerrar{
     display:block;
 }
+/*Video del recorrido*/
+.video video {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 0.2em solid black;
+    margin: 0;
+}
+.video h2{
+    color: black;
+    font-size: 5em;
+    text-align: center;
+}
+/*historia*/
+
+.historiaymision {
+    display: flex;
+    flex-direction: column;
+}
+
+.parte-1 {
+    position: relative;
+    margin: 0.5em 1em;
+    border: 0.2em solid;
+    background-color: rgb(194, 232, 169);
+    display: grid;
+    max-height: 35em;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 20% 80%;
+}
+.parte-1 h3{
+    font-size: 5em;
+    margin-top: 0.5em;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em rgb(94, 121, 94);
+}
+.parte-1 p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 1.7em;
+    place-self: center;
+    padding: 0.3em;
+    margin: 0;
+}
+
+.imagen {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+}
 
 
+
+/* MISION */
+.parte-2 {
+  position: relative;
+    margin: 0.5em 1em;
+    border: 0.2em solid;
+    background-color: rgb(194, 232, 169);
+    display: grid;
+    max-height: 35em;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows:  20% 80%;
+}
+
+.parte-2 h3{
+    font-size: 5em;
+    margin-top: 0.5em;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em rgb(94, 121, 94); 
+}
+.imagen2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: auto; 
+}
+
+
+.parte-2 p {
+     grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 1.7em;
+    place-self: center;
+    padding: 0.3em;
+    margin: 0;
+}
+
+/* horario y calendario */
+.titulo-horario{
+    font-size: 5em;
+    text-align: center;
+}
+.horarioycalendario {
+   display: grid;
+    grid-template-columns: 50% 50%;                
+    align-items: flex-start;
+    justify-content: space-evenly;
+    max-height: 60em;
+    border: 0.5em solid black;
+}
+
+.horarioycalendario img {
+    width: 100%;
+    max-height: 60em;
+}
+/* ubicacion */
+.ubicacion h2 {
+    font-size: 5em;
+    text-align: center;
+    color: black;
+}
+
+.ubi-2 {
+    position: relative;
+    background-color: rgb(242, 249, 244);
+    display: grid;
+    max-height: 29em;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 20% 80%
+}
+
+.ubi-2 img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+
+}
+
+.ubi-2 h3 {
+    font-size: 4em;
+    text-align: center;
+    place-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 2.5em;
+    text-shadow: 0.1em 0.1em 0.1em rgb(190, 190, 190);
+}
+
+.ubi-2 p {
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+    font-size: 1.5em;
+    padding: 0.3em;
+    margin: 1em;
+    place-self: center;
+}
+  /*------------------reglas-----------------------*/
+/* ----- DUDAS FRECUENTES (Flexbox) ----- */
+
+.dudas{
+     font-size: 5em;
+    text-align: center;
+    color: black;
+}
+.contenedor-flexible {
+    display: flex;
+    flex-direction: column; /* uno debajo de otro */
+    gap: 2em;
+    margin: 3em 10%;
+}
+
+.reglas {
+    border: 0.2em solid rgb(11, 60, 40);
+    padding: 1.5em;
+    background-color: rgb(194, 232, 169);
+    border-radius: 10px;
+}
+.reglas p {
+    font-size: 1.5em;
+}
+.reglas h3 {
+    font-size: 2em;
+    color: rgb(11, 60, 40);
+    margin-bottom: .5em;
+}
+
+.reglas:hover{
+     background-color: rgb(186, 231, 156);
+     margin: 0.2em;
+     box-shadow: 0.7em 0.7em 0.2em rgba(20, 109, 78, 0.679);
+}
 
 /* Pie de página*/
 #pie_pagina{
-         margin:0.1em;
+        margin:0.1em;
         border:0.2em solid black;
         display:grid;
         grid-template-columns: repeat(3,1fr);
@@ -157,13 +344,25 @@ a.boton-navegacion:hover {
     font-weight: bold;
     color: rgb(129, 167, 140)
 }
-.redes a{
-    text-decoration: none;
-    color: rgb(129, 167, 140)
+.redes a{   
+   text-decoration: none;
+    margin-left: 2em;
+    margin-right: 2em;
+    color:rgb(219, 225, 232);
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 50px; 
+    border: none;
+    display: inline-block;
+    background: linear-gradient(45deg, rgb(34, 69, 46),rgb(57, 149, 126));
+    box-shadow: 0 4px 15px rgba(39, 35, 124, 0.4);  
+    transition: all 0.4s ease;
 }
 .redes a:hover{
-  background-color:rgb(94, 115, 94);
-    font-weight: bolder;
+  transform: translateY(-3px); 
+    background-position: 100% 0; 
+     background: linear-gradient(45deg, rgb(44, 82, 57),rgb(75, 198, 167));
+    box-shadow: 0 8px 25px rgba(150, 60, 200, 0.5); 
 }
 .contacto{
         display: grid;
@@ -181,13 +380,28 @@ a.boton-navegacion:hover {
     color: rgb(129, 167, 140)
 }
 .contacto a{
-    text-decoration: none;
-    color: rgb(129, 167, 140)
+   text-decoration: none;
+    margin-left: 5.5em;
+    
+    margin-right: 5.5em;
+    color:rgb(219, 225, 232);
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 50px; 
+    border: none;
+    display: inline-block;
+    background: linear-gradient(45deg,rgb(34, 69, 46),rgb(57, 149, 126));
+    box-shadow: 0 4px 15px rgba(39, 35, 124, 0.4);  
+    transition: all 0.4s ease;
 }
 .contacto a:hover{
-    background-color:rgb(94, 115, 94);
+    transform: translateY(-3px); 
+    background-position: 100% 0; 
+    background: linear-gradient(45deg, rgb(44, 82, 57),rgb(75, 198, 167));
+    box-shadow: 0 8px 25px rgba(150, 60, 200, 0.5); 
 }
 .derechos-autor{
+        font-size: 1.3em;
         grid-column: 3/4;
         color: rgb(129, 167, 140)
     }
@@ -258,5 +472,70 @@ a.boton-navegacion:hover {
     top: -10px;
     color: rgb(11, 60, 40);
 }
+.video h2, .titulo-horario, .ubicacion h2, .parte-1 h3, .parte-2 h3, .dudas, .ubi-2 h3, .reglas h3{
+    font-size: 2em;
+}
 
+.parte-1 p, .parte-2 p, .ubi-2 p , .reglas p{ 
+    font-size: 1em;
+}
+
+/*Modificación al pie de*/
+
+.redes p{
+    font-size: 1em;
+
+}
+.redes a{   
+    margin-left: 0.5em;
+    margin-right:0.5em;
+    padding: 2px 10px;
+}
+
+.contacto p{   
+        font-size: 1em;
+
+}
+.contacto a{
+    margin-left: 0.5em;
+    margin-right:0.5em;
+    padding: 2px 10px;
+}
+
+.derechos-autor{
+        font-size: 1em;
+    }
+}
+/*Modifica la sección de promociones y eso*/
+@media screen and (max-width: 1500px) and (min-width: 850px){
+.video h2, .titulo-horario, .ubicacion h2, .parte-1 h3, .parte-2 h3, .dudas, .ubi-2 h3, .reglas h3{
+    font-size: 3em;
+}
+
+.parte-1 p, .parte-2 p, .ubi-2 p , .reglas p{ 
+    font-size: 1.5em;
+}
+    /*Modificación al pie de página*/
+.redes p{
+    font-size: 1.3em;
+
+}
+.redes a{   
+    margin-left: 1em;
+    margin-right:1em;
+    padding: 10px 20px;
+}
+
+.contacto p{
+        font-size: 1.3em;
+}
+.contacto a{
+   margin-left: 1em;
+    margin-right:1em;
+    padding: 10px 20px;
+}
+
+.derechos-autor{
+        font-size: 1.3em;
+    }
 }
