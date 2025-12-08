@@ -176,13 +176,13 @@ a.boton-navegacion:hover {
     border: 0.2em solid;
     background-color: rgb(194, 232, 169);
     display: grid;
-    max-height: 35em;
+    max-height: 36em;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 20% 80%;
 }
 .parte-1 h3{
     font-size: 5em;
-    margin-top: 0.5em;
+    margin-top: 0.1em;
     text-align: center;
     text-shadow: 0.1em 0.1em 0.1em rgb(94, 121, 94);
 }
@@ -422,6 +422,10 @@ a.boton-navegacion:hover {
         grid-column: 3/4;
         color: rgb(129, 167, 140)
     }
+.derechos-autor a{
+    text-decoration: none;
+  color: rgb(129, 167, 140);
+}
 /*Modificación para cuando la pantalla se hace pequeña*/
 @media screen and (max-width: 850px) {
  #navegacion{

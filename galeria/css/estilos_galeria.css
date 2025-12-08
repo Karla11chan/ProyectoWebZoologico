@@ -303,6 +303,10 @@ a.boton-navegacion:hover {
         grid-column: 3/4;
         color: rgb(129, 167, 140)
     }
+.derechos-autor a{
+    text-decoration: none;
+  color: rgb(129, 167, 140);
+}
 @media screen and (max-width: 850px) {
  #navegacion{
     font-size: 1em;

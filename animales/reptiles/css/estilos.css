@@ -296,6 +296,10 @@ a{
         grid-column: 3/4;
         color:rgb(39, 29, 26);
     }
+.derechos-autor a{
+    text-decoration: none;
+  color:rgb(39, 29, 26);
+}
 /*Modificación para cuando la pantalla se hace pequeña*/
 @media screen and (max-width: 850px) {
  

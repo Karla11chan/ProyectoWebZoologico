@@ -290,8 +290,12 @@ a{
 .derechos-autor{
         font-size: 1.3em;
         grid-column: 3/4;
-        color: rgb(134, 129, 167)
+        color: rgb(167, 129, 129)
     }
+.derechos-autor a{
+    text-decoration: none;
+  color: rgb(167, 129, 129);
+}
 /*Modificación para cuando la pantalla se hace pequeña*/
 @media screen and (max-width: 850px) {
  
